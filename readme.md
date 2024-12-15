@@ -8,6 +8,8 @@ but to introduce my effort of building a Vscode-Vim hybrid editor.
 
 > Disclaimer 3: Please refer to LLMs (like GPT-4 or Claude-3.5) if I do not make things clear.
 
+> Disclaimer 4: I use MacOS, but the settings should also work in Ubuntu or Windows with minor modifications.
+
 In this article, I will explain why I migrated from vscode to vim and then back to vscode.
 I will explain the pros & cons and show how to build a hybrid editor by combining the pros of both editors.
 
