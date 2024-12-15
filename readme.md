@@ -122,7 +122,7 @@ Here are the steps:
 
 We rely on the following extensions:
 
-1. **Vim**, by vscodevim. It is the very magic the bridging vscode and vim.
+1. **Vim**, by vscodevim. It is the very magic that bridges vscode and vim.
 
 <img src="images/vim.png" alt="Example Image" width="400">
 
@@ -134,7 +134,7 @@ We rely on the following extensions:
 
 <img src="images/open-file.png" alt="Example Image" width="400">
 
-4. **fuzzy-search**, by jacobdufault. It mimics the behavior of `current_buffer_fuzzy_find` of `telescope.nvim`.
+4. **fuzzy-search**, by jacobdufault. It is similar to `current_buffer_fuzzy_find` of `telescope.nvim`.
 
 <img src="./images/fuzzy-search.png" alt="Example Image" width="400">
 
