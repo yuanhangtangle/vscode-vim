@@ -1,0 +1,598 @@
+{
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "vim.useCtrlKeys": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-j>": true,
+        "<C-k>": true,
+        "<C-w>": true
+    },
+    "vim.leader": "<space>",
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            //seito-openfile.openFileFromText ,
+            "before": [
+                "g",
+                "f"
+            ],
+            "commands": [
+                "seito-openfile.openFileFromText"
+            ]
+        },
+        {
+            // consecutive <
+            "before": [
+                "<"
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ]
+        },
+        {
+            //consecutive >
+            "before": [
+                ">",
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "-"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            // user 0 to replace ^
+            "before": [
+                "0"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            // user ^ to replace 0
+            "before": [
+                "^"
+            ],
+            "after": [
+                "0"
+            ]
+        },
+        {
+            "before": [
+                "C-j"
+            ],
+            "commands": [
+                "cursorPageDown"
+            ]
+        },
+        {
+            "before": [
+                "C-k"
+            ],
+            "commands": [
+                "cursorPageUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "cursorPageDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "cursorPageUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "i"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        {
+            "before": [
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "f"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            //seito-openfile.openFileFromText ,
+            "before": [
+                "g",
+                "f"
+            ],
+            "commands": [
+                "seito-openfile.openFileFromText"
+            ]
+        },
+        {
+            //fuzzySearch.activeTextEditor
+            "before": [
+                ","
+            ],
+            "commands": [
+                "fuzzySearch.activeTextEditor"
+            ]
+        },
+        {
+            // rename symbols
+            "before": [
+                "<leader>",
+                "r",
+                "n"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            // go to previous problem
+            "before": [
+                "[",
+                "g"
+            ],
+            "when": [
+                "editorFocus"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            // go to next problem 
+            "before": [
+                "]",
+                "g"
+            ],
+            "when": [
+                "editorFocus"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        {
+            // last editted editor
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "after": [
+                "<C-r>"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "cursorPageDown"
+            ]
+        },
+        {
+            "before": [
+                "C-k"
+            ],
+            "commands": [
+                "cursorPageUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "0"
+            ],
+            "commands": [
+                "workbench.action.lastEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex4"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex1"
+            ]
+        },
+        {
+            "before": [
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "f"
+            ]
+        },
+        {
+            // use - to replace $
+            "before": [
+                "-"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            // user ^ to replace 0
+            "before": [
+                "^"
+            ],
+            "after": [
+                "0"
+            ]
+        },
+        {
+            // user 0 to replace ^
+            "before": [
+                "0"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            // editor.action.commentLine
+            "before": [
+                "<leader>",
+                "c",
+                "i"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        {
+            // show file explorer
+            "before": [
+                "<leader>",
+                "n",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            // toggle fold
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                "editor.unfold"
+            ]
+        },
+        {
+            // toggle fold
+            "before": [
+                "<leader>",
+                "i"
+            ],
+            "commands": [
+                "editor.toggleFold"
+            ]
+        },
+        {
+            // fold all
+            "before": [
+                "<leader>",
+                "m"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            // unfold all
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
+        {
+            // find active file in the explorer
+            "before": [
+                "<leader>",
+                "n",
+                "f"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ]
+        },
+        {
+            // navigate to the next editor
+            "before": [
+                "\\",
+                "]"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            // navigate to the previous editor
+            "before": [
+                "\\",
+                "["
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            // global search
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            //search symbols in file
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            //search symbols in work<leader>
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.showAllSymbols"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.focusNextGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.focusNextGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "cursorPageDown",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "cursorPageUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "a",
+                "f"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.delete.next.outer.function",
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "f"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.select.next.outer.function"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "f"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.select.next.inner.function"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "a",
+                "c"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.select.next.outer.class"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "c"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.select.next.inner.class"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "f"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.goTo.next.outer.function"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "f"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.goTo.previous.outer.function"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "c"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.goTo.next.outer.class"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "c"
+            ],
+            "when": " editorTextFocus  && vscode-textobjects.vimEnabled  && !inDebugRepl && vim.mode != 'Insert'",
+            "commands": [
+                "vscode-textobjects.goTo.previous.outer.class"
+            ]
+        },
+        {
+            // editor.action.goToReferences
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ],
+            "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        },
+        {
+            // editor.action.revealDefinition
+            "before": [
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ],
+            "when": "editorHasDefinitionProvider && editorTextFocus"
+        }
+    ],
+    "vim.insertModeKeyBindings": [],
+    "files.exclude": {
+        "**/.**": true
+    },
+    "explorer.autoReveal": false,
+    "git.autofetch": true,
+    "seito-openfile.notFoundTriggerQuickOpen": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false
+
+}
