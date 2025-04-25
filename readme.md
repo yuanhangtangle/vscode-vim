@@ -1,5 +1,7 @@
 # Building a Vscode-Vim Hybrid Editor
 
+This is a testing message from vscode github integration
+
 > Disclaimer 1: I am not sure whether it is generally a good idea to use a 'hybrid' editor, 
 but recently I am happy with it. 
 
